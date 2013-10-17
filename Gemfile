@@ -3,6 +3,7 @@ source 'https://rubygems.org'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.0'
 gem 'bootstrap-sass', '2.3.2.2'
+gem 'bcrypt-ruby', '3.0.1'
 
 
 
@@ -34,6 +35,12 @@ gem 'jbuilder', '~> 1.2'
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
   gem 'sdoc', require: false
+
+  group :development do
+    gem 'annotate', '2.5.0'
+
+  end
+  gem 'protected_attributes'
 end
 
 # Use ActiveModel has_secure_password
